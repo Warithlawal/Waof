@@ -162,35 +162,7 @@ productsWeLike.forEach((product) => {
   `;
 });
 
-document.querySelector('.js-products-we-like-grid').innerHTML = productsWeLikeHTML; 
+document.querySelector('.js-products-we-like-grid').innerHTML = productsWeLikeHTML;
 
 
-updateCartNumber();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+updateCartNumber(); 

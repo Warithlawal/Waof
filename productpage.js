@@ -170,22 +170,4 @@ if (decreaseButton) {
   }
 }
 
-updateCartNumber();
-
-
-// Function to remove product from cart
-//const removeFromCart = (productId) => {
-  //let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-  // Filter out the product with the matching ID
-  //cart = cart.filter(item => item.id !== productId);
-
-  // Save updated cart back to localStorage
-  //localStorage.setItem('cart', JSON.stringify(cart));
-
-  // Update the cart page HTML
-  //updateCartPage();
-//};
-
-// Call the updateCartPage function when the cart page loads
-//window.addEventListener('DOMContentLoaded', updateCartPage);
+updateCartNumber(); 
