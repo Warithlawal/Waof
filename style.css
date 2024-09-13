@@ -72,6 +72,21 @@ nav ul li a:hover {
 	width: 180px;
 }
 
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.1);
+  z-index: 1;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 
 header {
 	padding: 10px 15%;
