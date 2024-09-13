@@ -1,3 +1,26 @@
+const navMenu = document.getElementById('nav_menu'),
+    navOpen = document.getElementById('nav_open'),
+    navClose = document.getElementById('nav_close')
+
+if (navOpen) {
+  navOpen.addEventListener('click', () => {
+    navMenu.classList.add('show-menu')
+  })
+}
+
+if (navClose) {
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu')
+  })
+}
+
+
+
+
+
+
+
+
 const productsWeLike =  [{
     id: 6,
     name: 'Tall Dresser',
@@ -101,7 +124,7 @@ let productsWeLikeHTML = '';
 productsWeLike.forEach((product) => {
   productsWeLikeHTML += `
     <div class="products">
-      <a href="product-page.html?productId=${product.id}">
+      <a href="categories.html?productId=${product.id}">
         <div class="products-image">
           <img src="${product.Image1}" alt="${product.name}">
         </div>
@@ -116,10 +139,12 @@ productsWeLike.forEach((product) => {
   `;
 });
 
-document.querySelector('.js-products-we-like-grid').innerHTML = productsWeLikeHTML;
+document.querySelector('.js-products-we-like-grid').innerHTML = productsWeLikeHTML; 
 
 
 updateCartNumber();
+
+
 
 
 

@@ -36,8 +36,14 @@ nav ul li a:hover {
 	display: flex;
 	gap: 20px;
 	align-items: center;
-	position: relative;
+
 }
+
+.home {
+		position: relative;
+		padding-right: 10px;
+}
+
 
 .cart-container i {
 	font-size: 25px;
@@ -58,7 +64,7 @@ nav ul li a:hover {
   align-items: center;
  	font-size: 14px;
  	position: absolute;
- 	right: -20px;
+ 	right: -5px;
  	top: -22px;
 }
 
@@ -172,7 +178,7 @@ main {
 .creative-btn a {
 	padding: 10px 18px;
 	text-decoration: none;
-	background: black;
+	background: red;
 	color: white;
 }
 
@@ -197,7 +203,7 @@ main {
 
 .trending-arrow i{
 	padding: 3px 5px;
-	background: black;
+	background: red;
 	color: white;
 	font-size: 25px;
 	cursor: pointer;
@@ -259,7 +265,7 @@ main {
 	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
 	align-items: center;
-	margin: 100px 0;
+	margin: 10px 0;
 	gap: 50px;
 }
 
@@ -278,7 +284,7 @@ main {
 .comfort-btn a {
 	padding: 10px 18px;
 	text-decoration: none;
-	background: black;
+	background: red;
 	color: white;
 }
 
@@ -595,6 +601,12 @@ footer {
 	margin-top: 20px;
 }
 
+.nav-open,
+.nav-close {
+	cursor: pointer;
+	display: none;
+}
+
 
 @media only screen and (max-width: 940px) {
 	header {
@@ -625,6 +637,7 @@ footer {
 
 	.comfort {
 		grid-template-columns: 1fr;
+		margin-bottom: 50px;
 	}
 
 	.comfort-img {
@@ -637,6 +650,16 @@ footer {
 		height: 100%;
 		object-fit: cover;
 	}
+
+	.left-side {
+		order: 2;
+	}
+
+	.right-side {
+		order: 1;
+	}
+
+
 }
 
 @media only screen and (max-width: 744px) {
@@ -661,6 +684,40 @@ footer {
 		}
 		.logo {
 			width: 130px;
+		}
+		.menu-collapse {
+			position: fixed;
+			top: 0;
+			right: -100%;
+			background: hsla(0, 0%, 0%, .75);
+			width: 200px;
+			text-align: center;
+			backdrop-filter: blur(8px);
+			transition: right .4s;
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			z-index: 2;
+			padding-top: 40px;
+			color: white;
+
+		}
+		.menu-collapse ul li {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 25px;
+		}
+		.menu-collapse ul li a {
+			color: white;
+		}
+
+		.nav-open,
+		.nav-close {
+			display: block;
+		}
+
+		.show-menu {
+			right: 0;
 		}
 	}
 
@@ -712,12 +769,8 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 3750px) {
-	
-}
-.class {
-	
-}
+
+
 
 
 
