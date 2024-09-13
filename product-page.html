@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<script src="https://kit.fontawesome.com/127aef0c53.js" crossorigin="anonymous"></script>
+	
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+</head>
+<body>
+	<nav>
+		<a href="index.html"><img class="logo" src="images/waouf.png"></a>
+
+		<div class="cart-container">
+			<ul>
+				<li><a href="categories.html">Categories</a></li>
+				<li><a href="product-page.html">Product page</a></li>
+			</ul>
+
+			<a href="cart.html"><i class="fa-sharp fa-light fa-bags-shopping"></i></a>
+
+			<p class="cart-number"></p>
+			
+		</div>
+	</nav>
+
+	<main>
+		<section>
+			<h1 class="product-page-header"></h1>
+			<div class="product-page-content">
+			  <div class="product-page-img">
+			    <div class="product-page-img-2">
+			      <img src="">
+			    </div>
+			    <div class="product-page-img-grid"></div>
+			  </div>
+			  <div class="product-summary">
+			    <p class="product-description"></p>
+			    <div class="quantity">
+			      <h4>Quantity</h4>
+			      <div class="quantity-flex">
+			        <span class="decrease">-</span>
+			        <span class="middle">1</span>
+			        <span class="increase">+</span>
+			      </div>
+			      <h4></h4> <!-- This is where the price will go -->
+			    </div>
+			    <div class="summary-btn">
+			      <a class="add" href="#">ADD TO CART</a>
+			      <a class="buy" href="#">BUY NOW</a>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="product-page-details">
+				<div class="details-text texture-detail">
+					<h3>Texture:</h3>
+					<p></p>
+				</div>
+
+				<div class="details-text weight-detail">
+					<h3>Weight:</h3>
+					<p></p>
+				</div>
+
+				<div class="details-text size-detail">
+					<h3>Size:</h3>
+					<p></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="trending">
+			<div class="trending-header">
+				<h1>Trending Now</h1>
+				<div class="trending-arrow top">
+					<i class="fa-regular fa-arrow-left left"></i>
+					<i class="fa-regular fa-arrow-right right"></i>
+				</div>
+			</div>
+			<div class="frame">
+				<div class="trending-products-container js-trending-products-container slider">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="newsletter">
+			<h2>Newsletter</h2>
+			<input type="text" name="" placeholder="Email address"> <button 
+			id="sub-button" 
+				onclick="
+				clicked();
+				"; 
+			>Subscribe</button>
+			<p class="subscribed"></p>
+		</div>
+	</footer>
+	<script src="cart.js"></script>
+
+</body>
+
+<script src="trending-script.js"></script>
+
+<script src="productpage.js"></script>
+</html>
