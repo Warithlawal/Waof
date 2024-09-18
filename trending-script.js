@@ -129,7 +129,7 @@ let trendingProductsHTML = '';
 trendingProducts.forEach((trendingProducts) => {
 	trendingProductsHTML += `
 	<div class="trending-products">
-    <a href ="product-page.html">
+    <a href ="categories.html">
   		<div class="trending-products-image">
   			<img src="${trendingProducts.Image1}">
   		</div>
